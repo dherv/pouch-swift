@@ -30,5 +30,19 @@ class pouchTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
+    //MARK: Expense Class Tests
+    // Confirm that the Expense initializer returns an Expense object when passed valid parameters.
+    func testExpenseInitializationSucceeds() {
+        
+    }
+    
+    // Confirm that the Meal initialier returns nil when passed a negative rating or an empty name.
+    func testExpenseInitializationFails() {
+        // Empty String
+        let emptyStringExpense = Expense.init(name: "")
+        XCTAssertNil(emptyStringExpense)
+    }
 
 }
